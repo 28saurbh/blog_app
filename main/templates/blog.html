@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block title %} All Blogs {% endblock title %}
+
+{% block body %}
+
+<!--===== Blogs Heading=====-->
+    <div class="Heading">
+        <div class="title_name">
+            <h3>{{data.cat}} Documentaion -</h3>
+        </div>
+
+    </div>
+    
+<!--===== Blogs Content=====-->
+    <div class="container mt-3">
+       {{data.content|safe}}
+    </div>
+
+{% endblock body %}

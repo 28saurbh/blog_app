@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Category Blogs {% endblock title %}
+
+{% block body %}
+
+<!--===== Filter Categerory Documentaions =====-->
+    <div class="container mt-3">
+        <div class="row">
+            {% for i in data %}
+            <div class="col-12  text-dark   mb-3" style="cursor: pointer;">
+                <a href="{% url 'blog' i.slug%}">
+                    <p class="card-text">{{forloop.counter}}. {{i.title}} - {{i.short_des}}...</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock body %}

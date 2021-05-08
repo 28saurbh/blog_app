@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block title %}Category Documentaions{% endblock title %}
+
+{% block body %}
+
+<!--===== All Categerory Documentaions =====-->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 d-flex align-items-stretch">
+
+        <!--===== Django Categerory Documentaions =====-->
+            <div class="col">
+                <div class="card border-white h-100">
+                    <div class="icon text-primary mr-2">
+                        <svg width="35" height="35" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h24v24H0z"></path>
+                                <path
+                                    d="M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z"
+                                    fill="#335EEA"></path>
+                                <rect fill="#335EEA" opacity=".3" transform="rotate(15 12 12)" x="11" y="4" width="2"
+                                    height="16" rx="1"></rect>
+                            </g>
+                        </svg>
+                    </div>
+                    <a href="{% url 'cat_blog' %}">
+                        <div class="card-body">
+                            <h5 class="card-title">Django Documentation</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!--===== Demo Documentaions =====-->
+            <div class="col">
+                <div class="card border-white h-100">
+                    <div class="icon text-primary mr-2">
+                        <svg width="35" height="35" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h24v24H0z"></path>
+                                <path
+                                    d="M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z"
+                                    fill="#335EEA"></path>
+                                <rect fill="#335EEA" opacity=".3" transform="rotate(15 12 12)" x="11" y="4" width="2"
+                                    height="16" rx="1"></rect>
+                            </g>
+                        </svg>
+                    </div>
+    
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col  ">
+                <div class="card border-white h-100">
+                    <div class="icon text-primary mr-2">
+                        <svg width="35" height="35" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h24v24H0z"></path>
+                                <path
+                                    d="M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z"
+                                    fill="#335EEA"></path>
+                                <rect fill="#335EEA" opacity=".3" transform="rotate(15 12 12)" x="11" y="4" width="2"
+                                    height="16" rx="1"></rect>
+                            </g>
+                        </svg>
+                    </div>
+    
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}
